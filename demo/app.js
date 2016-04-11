@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-    res.sendFile('public/gymno-game.html' , { root : __dirname});
+    res.sendFile('public/gymno.html' , { root : __dirname});
 });
 
 app.use(function (err, req, res, next) {

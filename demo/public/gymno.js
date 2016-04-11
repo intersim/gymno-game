@@ -30,6 +30,7 @@ Tone.Transport.scheduleRepeat(function () {
   piano.triggerAttack(['b3','d4','fs4']);
 }, "2m", "0:1:0");
 
+// left hand, repeating pattern
   // 2nd measure
 Tone.Transport.scheduleRepeat(function () {
   piano.triggerAttack('d2');
