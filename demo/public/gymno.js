@@ -20,8 +20,7 @@ Tone.Transport.timeSignature = 3;
 // change Tone.Transport's tempo from the default 120 bpm to "lent" (slow)
 Tone.Transport.bpm.rampTo(70);
 
-// left hand, repeating pattern
-  // 1st measure
+// 1st measure
 Tone.Transport.scheduleRepeat(function () {
   piano.triggerAttack('g2');
 }, "2m", "0:0:0");
@@ -30,8 +29,7 @@ Tone.Transport.scheduleRepeat(function () {
   piano.triggerAttack(['b3','d4','fs4']);
 }, "2m", "0:1:0");
 
-// left hand, repeating pattern
-  // 2nd measure
+// 2nd measure
 Tone.Transport.scheduleRepeat(function () {
   piano.triggerAttack('d2');
 }, "2m", "1:0:0");
@@ -45,7 +43,6 @@ var melody = new Tone.Sequence(function(time, note) {
   piano.triggerAttack(note);
   if (note === 'a4') {
     Tone.Transport.stop();
-    melody.stop();
   }
 }, ['fs5', 'a5', 'g5', 'fs5', 'cs5', 'b4', 'cs5', 'd5', 'a4'], '4n');
 
