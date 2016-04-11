@@ -49,9 +49,7 @@ var melody = new Tone.Sequence(function(time, note) {
   }
 }, ['fs5', 'a5', 'g5', 'fs5', 'cs5', 'b4', 'cs5', 'd5', 'a4'], '4n');
 
-// game starts here
-$('#music').hide();
-
+// gymnopedie game
 var myNotes = [];
 
 var buttons = {
