@@ -1,5 +1,5 @@
-demo/node_modules/
-demo/public/piano/edited
-demo/public/piano/original
+/node_modules/
+public/piano/edited
+public/piano/original
 slide-imgs/
 talk-notes.md
